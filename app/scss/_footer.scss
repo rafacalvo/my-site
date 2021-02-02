@@ -1,0 +1,10 @@
+.footer {
+  background-color: $darkBgT09;
+  text-align: center;
+
+  &__social {
+    a {
+      font-size: $font-lg;
+    }
+  }
+}

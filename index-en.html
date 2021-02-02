@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Front-End Web Developer working to make your business grow by making responsive, accessible and affordable websites."
+    />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript, SASS, GitHub, git, Web, Developer, Front-end, Development, Web Development"
+    />
+    <meta name="author" content="Rafael Calvo" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- Twitter meta tags -->
+    <meta name="twitter:title" content="Rafael Calvo. Front-End Developer." />
+    <meta
+      name="twitter:description"
+      content="Front-End Web Developer working to make your business grow by making responsive, accessible and affordable websites."
+    />
+    <meta
+      name="twitter:image"
+      content="https://i.ibb.co/dPQNqQt/Portfolio-Twitter-Card-2.png"
+    />
+    <!-- Facebook meta tags -->
+    <meta property="og:title" content="Rafael Calvo. Front-End Developer." />
+    <meta
+      property="og:description"
+      content="Front-End Web Developer working to make your business grow by making responsive, accessible and affordable websites."
+    />
+    <meta
+      property="og:image"
+      content="https://i.ibb.co/dPQNqQt/Portfolio-Twitter-Card-2.png"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <link
+      rel="preconnect stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preconnect stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <!-- Stylesheet -->
+    <link rel="preload stylesheet" href="/dist/css/style.css" as="style" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/images/icon.png" type="image/x-icon" />
+    <title>Rafael Calvo | Front-End Web Developer</title>
+  </head>
+  <body id="main" onload="ClearForm()">
+    <!-- Go Top Button -->
+    <button
+      onclick="topFunction()"
+      id="goTopBtn"
+      class="go-top-btn"
+      title="Go to top"
+    >
+      Go Top
+    </button>
+    <nav class="nav">
+      <!-- Desktop Navbar -->
+      <div
+        class="nav__desktop hide-for-mobile pall-1 container flex flex-jc-sb flex-ai-c"
+      >
+        <div class="logo flex flex-ai-c flex-jc-sb">
+          <a href="index-en.html">
+            <img src="/images/logo.svg" alt="RC logo" loading="lazy"
+          /></a>
+          <a href="index-en.html">Rafael Calvo</a>
+        </div>
+        <div class="desk-links">
+          <a href="#showcase"><i class="bi bi-images"></i> Projects</a>
+          <a href="#services">
+            <i class="far fa-lightbulb"></i>
+            Services
+          </a>
+          <a href="#about">
+            <i class="bi bi-person-badge"></i>
+            About
+          </a>
+          <a href="#contact"><i class="far fa-paper-plane"></i> Contact</a>
+        </div>
+        <div class="desk-lang flex flex-jc-sb flex-ai-c flex-fd-c">
+          <p>Select language</p>
+          <div class="flags">
+            <a href="index.html"
+              ><img
+                src="/images/icons/spain.svg"
+                alt="Flag of Spain"
+                loading="lazy"
+            /></a>
+            |
+            <a href="index-en.html"
+              ><img
+                src="/images/icons/united-states.svg"
+                alt="Flag of the USA"
+                loading="lazy"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile Navbar -->
+      <div class="nav__mobile hide-for-desktop flex flex-jc-sa flex-ai-c py-1">
+        <a href="index-en.html"
+          ><img
+            src="/images/logo.svg"
+            alt="RC logo"
+            class="logo"
+            loading="lazy"
+        /></a>
+        <a href="javascript:void(0)" onclick="openNav()"
+          ><i class="fas fa-bars"></i
+        ></a>
+      </div>
+    </nav>
+    <!-- Sidenav -->
+    <div id="mySidenav" class="sidenav flex flex-fd-c py-1">
+      <!-- Sidenav header -->
+      <div class="sidenav__head flex flex-jc-sb flex-ai-c px-1">
+        <a href="index-en.html" onclick="closeNav()"
+          ><img
+            src="/images/logo.svg"
+            alt="RC logo"
+            class="logo"
+            loading="lazy"
+        /></a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          ><i class="bi bi-x-square"></i
+        ></a>
+      </div>
+      <!-- Sidenav links -->
+      <div class="mobile-links flex flex-fd-c flex-ai-c my-2">
+        <a href="#showcase" onclick="closeNav()"
+          ><i class="bi bi-images"></i> Projects</a
+        >
+        <a href="#services" onclick="closeNav()">
+          <i class="far fa-lightbulb"></i>
+          Services
+        </a>
+        <a href="#about" onclick="closeNav()">
+          <i class="bi bi-person-badge"></i>
+          About
+        </a>
+        <a href="#contact" onclick="closeNav()"
+          ><i class="far fa-paper-plane"></i> Contact</a
+        >
+      </div>
+      <!-- Sidenav language change section -->
+      <div class="mobile-lang flex flex-jc-sb flex-ai-c flex-fd-c">
+        <p>Select language</p>
+        <div class="flags">
+          <a href="index.html"
+            ><img src="/images/icons/spain.svg" alt="Flag of Spain"
+          /></a>
+          |
+          <a href="index-en.html"
+            ><img
+              src="/images/icons/united-states.svg"
+              alt="Flag of the USA"
+              loading="lazy"
+          /></a>
+        </div>
+      </div>
+      <!-- Sidenav social links -->
+      <div class="mobile-social flex flex-ai-c">
+        <a
+          href="https://twitter.com/rafacalvodev"
+          target="_blank"
+          rel="noopener noreferrer"
+          onclick="closeNav()"
+        >
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a
+          class="mx-1"
+          href="https://github.com/rafacalvo"
+          target="_blank"
+          rel="noopener noreferrer"
+          onclick="closeNav()"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/rafacalvodev/"
+          target="_blank"
+          rel="noopener noreferrer"
+          onclick="closeNav()"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </div>
+    </div>
+    <!-- Hero Section -->
+    <header class="hero container my-1 flex flex-fd-c flex-ai-c flex-jc-sa">
+      <div class="title">
+        <h3>Hi, I'm Rafael Calvo.</h3>
+        <h1>
+          I’ll help your business grow by making you a website that'll be
+          responsive, affordable and accessible.
+        </h1>
+      </div>
+      <a href="#showcase" class="button hero__btn">See my works!</a>
+    </header>
+    <main>
+      <!-- Showcase Section -->
+      <section
+        id="showcase"
+        class="showcase container pall-2 my-2 flex flex-ai-c flex-fd-c flex-jc-sb"
+      >
+        <h2>Here are my most notable works:</h2>
+        <div class="showcase__grid mall-1">
+          <!-- 1st Card -->
+          <div class="card">
+            <img
+              src="/images/fundaayc.png"
+              alt="Funda a y c screen shot"
+              class="card-img mb-1"
+              loading="lazy"
+            />
+            <div class="card-content">
+              <h4>Fundación Arquitectura y Ciudad</h4>
+              <p>
+                Current site I'm working with. It's a foundation dedicated to
+                make and show an archive of the architectural works in
+                Venezuela.
+              </p>
+              <div class="card-buttons flex flex-jc-st flex-ai-c">
+                <a
+                  class="button"
+                  href="https://fundaayc.wordpress.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Visit site</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- 2nd Card -->
+          <div class="card">
+            <img
+              src="/images/mafitacrochet.png"
+              alt="Mafitacrochet screen shot"
+              class="card-img mb-1"
+              loading="lazy"
+            />
+            <div class="card-content">
+              <h4>Mafita Crochet</h4>
+              <p>
+                My mom's website. Made to show baby clothes she makes with
+                crochet and mercerized cotton.
+              </p>
+              <div class="card-buttons flex flex-jc-st flex-ai-c">
+                <a
+                  class="button"
+                  href="https://mafitacrochet.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Visit site</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- 3rd card -->
+          <div class="card">
+            <img
+              src="/images/frontendmentor.png"
+              alt="FronEnd Mentor screenshot"
+              class="card-img mb-1"
+              loading="lazy"
+            />
+            <div class="card-content">
+              <h4>Frontend Mentor Showcase</h4>
+              <p>
+                A simple site made to show the challenges from Frontend Mentor
+                I've been doing.
+              </p>
+              <div class="card-buttons flex flex-jc-st flex-ai-c">
+                <a
+                  class="button"
+                  href="https://frontend-mentor-showcase.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Visit site</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="next-section flex flex-jc-sb flex-fd-c flex-ai-c">
+          <a href="#services" class="services-btn">See what I offer</a>
+          <a href="#services"><i class="bi bi-caret-down-fill"></i></a>
+        </div>
+      </section>
+      <!-- Services Section -->
+      <section
+        id="services"
+        class="services container pall-2 my-2 flex flex-ai-c flex-fd-c flex-jc-sb"
+      >
+        <h2>Here is what I offer:</h2>
+        <div class="services__grid mall-1">
+          <div class="card">
+            <header class="card__header flex flex-jc-st flex-ai-c">
+              <div class="card-icon flex flex-ai-c flex-jc-c">
+                <i class="bi bi-chat-left-text"></i>
+              </div>
+              <h3>Reviewing & Strategy.</h3>
+            </header>
+            <p>
+              After establishing contact, I'll make a review of your site (if
+              you have any) and the online presence your business has, also
+              we'll discuss the approach of how to make your new website while
+              prototyping it.
+            </p>
+          </div>
+          <div class="card">
+            <header class="card__header flex flex-jc-st flex-ai-c">
+              <div class="card-icon flex flex-ai-c flex-jc-c">
+                <i class="bi bi-pencil-square"></i>
+              </div>
+              <h3>Design & Develop.</h3>
+            </header>
+            <p>
+              I will design and develop the website following the results of our
+              previous meeting. The website will be made in such a way that is
+              attractive to visitors and they find their destination in the
+              simplest way possible.
+            </p>
+          </div>
+          <div class="card">
+            <header class="card__header flex flex-jc-st flex-ai-c">
+              <div class="card-icon flex flex-ai-c flex-jc-c">
+                <i class="bi bi-headset"></i>
+              </div>
+              <h3>Testing & Support.</h3>
+            </header>
+            <p>
+              After confirming the site is up and running smoothly, and if we
+              agree to it, I'll be making sure the site keeps running and will
+              be providing enough support to help you keep it optimal.
+            </p>
+          </div>
+        </div>
+
+        <div class="next-section flex flex-jc-sb flex-fd-c flex-ai-c">
+          <a href="#about">About me</a>
+          <a href="#about"><i class="bi bi-caret-down-fill"></i></a>
+        </div>
+      </section>
+      <!-- About Section -->
+      <section
+        id="about"
+        class="about container pall-2 my-2 flex flex-ai-c flex-fd-c flex-jc-sb"
+      >
+        <h2>A little bit about myself:</h2>
+        <div class="about__grid flex flex-jc-c flex-ai-c">
+          <div class="about-img">
+            <img
+              class="about-pic"
+              src="/images/about-pic.jpg"
+              alt="Rafael's portrait"
+              loading="lazy"
+            />
+          </div>
+          <div class="about-text">
+            <p>
+              My name is Rafael Calvo and I'm a self taught Front-End Web
+              Developer looking to gain experience by building websites that
+              help business improve their online presence. <br />
+              Over time I've used many online resources available to be where I
+              am today. <br />
+              Among my most used tools to work are the following:
+            </p>
+            <div class="tools">
+              <i class="fab fa-figma"></i>
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3"></i>
+              <i class="fab fa-sass"></i>
+              <i class="fab fa-js"></i>
+              <i class="fab fa-git-alt"></i>
+            </div>
+          </div>
+        </div>
+        <div class="next-section flex flex-jc-sb flex-fd-c flex-ai-c">
+          <a href="#contact">Contact me</a>
+          <a href="#contact"><i class="bi bi-caret-down-fill"></i></a>
+        </div>
+      </section>
+      <!-- Contact Section -->
+      <section
+        id="contact"
+        class="contact container pall-2 my-2 flex flex-ai-c flex-fd-c flex-jc-sb"
+      >
+        <h2>This is where you can contact me:</h2>
+        <div class="contact__grid flex flex-jc-sb">
+          <!-- Social Links -->
+          <div class="contact-text">
+            <h3>Here's how this work:</h3>
+            <p>
+              After establishing contact we'll schedule a meeting where we'll
+              discuss the approach to build your site and the price of the
+              project. After that we'll make a route containing the process for
+              building your site where the result will be the launching of said
+              site and the increasing traffic towards your business.
+            </p>
+            <h3>You can also find me here:</h3>
+            <div class="contact-social flex flex-jc-c mall-1">
+              <a
+                href="https://twitter.com/rafacalvodev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                href="https://github.com/rafacalvo"
+                class="mx-1"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/rafacalvodev/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <!-- Contact Form -->
+          <div class="contact-form">
+            <h3>Contact me:</h3>
+            <form name="contact" method="POST" data-netlify="true">
+              <div class="form my-2">
+                <label for="name">* Your Name: </label>
+                <input type="text" name="name" required />
+              </div>
+              <div class="form my-2">
+                <label for="email">* Your Email: </label>
+                <input type="email" id="email" name="email" />
+              </div>
+              <div class="form mt-2">
+                <label>* Message: </label>
+                <textarea name="message" required></textarea>
+              </div>
+              <p>
+                <em><small>* Required</small></em>
+              </p>
+              <button class="button my-1" type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- Footer -->
+      <footer class="footer mt-3 pall-2 flex flex-fd-c flex-jc-sb flex-ai-c">
+        <!-- Social Links -->
+        <div class="footer__social flex flex-jc-sa mall-1">
+          <a
+            href="https://twitter.com/rafacalvodev"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            href="https://github.com/rafacalvo"
+            class="mx-1"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/rafacalvodev/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+        <div class="footer__copyright">
+          <h4>© Rafael Calvo 2021 | All Rights Reserved</h4>
+        </div>
+      </footer>
+    </main>
+  </body>
+
+  <!-- Javascript -->
+  <script src="/app/js/app.js" defer></script>
+</html>

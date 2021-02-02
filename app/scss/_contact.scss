@@ -1,0 +1,84 @@
+.contact {
+  height: 100vh;
+
+  h2,
+  h3 {
+    text-align: center;
+  }
+
+  h2 {
+    margin-bottom: 3rem;
+  }
+
+  @include breakpoint-down(medium) {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__grid {
+    width: 100%;
+
+    @include breakpoint-down(medium) {
+      flex-direction: column;
+    }
+  }
+
+  .contact-text,
+  .contact-form {
+    width: 450px;
+    flex: 1 1 0px;
+    margin: 2rem;
+
+    @include breakpoint-down(medium) {
+      width: 100%;
+      margin: 0;
+      padding: 1rem;
+    }
+  }
+
+  .contact-text {
+    a {
+      font-size: 1.5rem;
+    }
+  }
+
+  .contact-form {
+    p {
+      margin-top: 0.5rem;
+    }
+
+    label,
+    input,
+    textarea {
+      width: 100%;
+    }
+
+    label,
+    input {
+      height: 2rem;
+    }
+
+    input,
+    textarea {
+      background-color: $veryLightBlue;
+      border: none;
+      border-radius: 0.25rem;
+    }
+
+    label {
+      font-weight: 600;
+    }
+
+    textarea {
+      height: 6rem;
+    }
+  }
+
+  .social-links {
+    a {
+      font-size: $font-xlg;
+    }
+  }
+}

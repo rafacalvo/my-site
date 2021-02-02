@@ -1,0 +1,170 @@
+.nav {
+  background-color: $darkBgT07;
+
+  @include breakpoint-down(medium) {
+    background: none;
+  }
+
+  a {
+    margin: auto 0;
+    font-size: $font-med;
+    font-weight: 500;
+  }
+
+  i {
+    font-size: 1.5rem;
+  }
+
+  .logo {
+    margin-left: 1rem;
+
+    img {
+      height: 3rem;
+      margin: auto;
+      padding: auto;
+    }
+    a:last-child {
+      margin: 0 0 0 0.5rem;
+    }
+  }
+
+  &__desktop {
+    height: 5rem;
+
+    .desk-links,
+    .desk-social {
+      a:hover,
+      svg:hover {
+        color: $secondaryColor;
+        transition: ease 0.5s;
+      }
+    }
+
+    .desk-links {
+      img {
+        width: 1.5rem;
+      }
+
+      a {
+        img {
+          position: relative;
+          top: 15%;
+        }
+      }
+
+      a:first-child,
+      a:nth-child(2),
+      a:nth-child(3) {
+        margin: 0 3rem 0 0;
+      }
+
+      a:nth-child(3) {
+        i {
+          position: relative;
+          top: -0.25rem;
+        }
+      }
+    }
+
+    .desk-lang {
+      p {
+        margin: 0;
+        font-size: $font-sm;
+      }
+
+      a {
+        margin: 0 0.85rem;
+      }
+
+      img {
+        position: relative;
+        top: 8px;
+        width: 1.75rem;
+      }
+    }
+  }
+
+  &__mobile {
+    border-radius: 0 0 1rem 1rem;
+    background-color: $darkBgT07;
+
+    img {
+      width: 3rem;
+    }
+
+    i {
+      font-size: 2rem;
+    }
+  }
+}
+
+.sidenav {
+  background-color: $darkBgT1;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: ease 0.5s;
+  padding-top: 2rem;
+  box-shadow: 1.5rem 1rem 2.5rem $darkBgT09;
+
+  .logo {
+    width: 2.5rem;
+  }
+
+  img {
+    width: 2rem;
+  }
+
+  i {
+    font-size: 1.5rem;
+  }
+
+  .mobile-lang {
+    p {
+      margin: 0;
+      font-size: $font-sm;
+    }
+
+    a {
+      margin: 0 0.85rem;
+      height: 100%;
+    }
+
+    img {
+      position: relative;
+      top: 10px;
+      width: 1.75rem;
+    }
+
+    .flags {
+      height: 40px;
+    }
+  }
+
+  .mobile-links,
+  .mobile-social {
+    margin: 2rem auto;
+  }
+
+  .mobile-links {
+    text-align: left;
+
+    a:nth-child(2) {
+      margin: 1.5rem 0;
+    }
+
+    a:nth-child(3) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .mobile-social {
+    a:nth-child(2) {
+      margin: 0 1.5rem;
+    }
+  }
+}

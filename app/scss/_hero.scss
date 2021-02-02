@@ -1,0 +1,26 @@
+.hero {
+  height: 85vh;
+  width: 60%;
+  text-align: center;
+  color: $lightBgColor;
+  margin-bottom: 3rem;
+
+  @include breakpoint-down(medium) {
+    height: 100vh;
+    margin: 0;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  h1 {
+    color: $veryLightBlue;
+  }
+
+  h3 {
+    color: $secondaryColor;
+  }
+
+  &__btn {
+    font-size: $font-med;
+  }
+}

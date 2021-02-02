@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Desarrollador Web Front-End Web dedicado en hacer que tu negocio crezca haciendo sitios web que sean responsivos, accessibles y asequibles."
+    />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript, SASS, GitHub, git, Web, Developer, Front-end, Development, Web Development, Desarrollo, Desarrollo Web"
+    />
+    <meta name="author" content="Rafael Calvo" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- Twitter meta tags -->
+    <meta
+      name="twitter:title"
+      content="Rafael Calvo. Desarrollador Front-End."
+    />
+    <meta
+      name="twitter:description"
+      content="Desarrollador Web Front-End Web dedicado en hacer que tu negocio crezca haciendo sitios web que sean responsivos, accessibles y asequibles."
+    />
+    <meta
+      name="twitter:image"
+      content="https://i.ibb.co/7NNFjPj/Portfolio-Twitter-Card-es.png"
+    />
+    <!-- Facebook meta tags -->
+    <meta
+      property="og:title"
+      content="Rafael Calvo. Desarrollador Front-End."
+    />
+    <meta
+      property="og:description"
+      content="Desarrollador Web Front-End Web dedicado en hacer que tu negocio crezca haciendo sitios web que sean responsivos, accessibles y asequibles."
+    />
+    <meta
+      property="og:image"
+      content="https://i.ibb.co/7NNFjPj/Portfolio-Twitter-Card-es.png"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <link
+      rel="preconnect stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preconnect stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <!-- Stylesheet -->
+    <link rel="preload stylesheet" href="/dist/css/style.css" as="style" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/images/icon.png" type="image/x-icon" />
+    <title>Rafael Calvo | Desarrollador Web Front-End</title>
+  </head>
+  <body id="main" onload="ClearForm()">
+    <!-- Go Top Button -->
+    <button
+      onclick="topFunction()"
+      id="goTopBtn"
+      class="go-top-btn"
+      title="Go to top"
+    >
+      Ve Arriba
+    </button>
+    <nav class="nav">
+      <!-- Desktop Navbar -->
+      <div
+        class="nav__desktop hide-for-mobile pall-1 container flex flex-jc-sb flex-ai-c"
+      >
+        <div class="logo flex flex-ai-c flex-jc-sb">
+          <a href="/"> <img src="/images/logo.svg" alt="RC logo" /></a>
+          <a href="/">Rafael Calvo</a>
+        </div>
+        <div class="desk-links">
+          <a href="#showcase"><i class="bi bi-images"></i> Proyectos</a>
+          <a href="#services">
+            <i class="far fa-lightbulb"></i>
+            Servicios
+          </a>
+          <a href="#about">
+            <i class="bi bi-person-badge"></i>
+            Acerca de
+          </a>
+          <a href="#contact"><i class="far fa-paper-plane"></i> Contacto</a>
+        </div>
+        <div class="desk-lang flex flex-jc-sb flex-ai-c flex-fd-c">
+          <p>Selecciona lenguaje</p>
+          <div class="flags">
+            <a href="index.html"
+              ><img src="/images/icons/spain.svg" alt="Bandera de España"
+            /></a>
+            |
+            <a href="index-en.html"
+              ><img
+                src="/images/icons/united-states.svg"
+                alt="Bandera de Estados Unidos"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile Navbar -->
+      <div class="nav__mobile hide-for-desktop flex flex-jc-sa flex-ai-c py-1">
+        <a href="/"
+          ><img
+            src="/images/logo.svg"
+            alt="RC logo"
+            class="logo"
+            loading="lazy"
+        /></a>
+        <a href="javascript:void(0)" onclick="openNav()"
+          ><i class="fas fa-bars"></i
+        ></a>
+      </div>
+    </nav>
+    <!-- Sidenav -->
+    <div id="mySidenav" class="sidenav flex flex-fd-c py-1">
+      <!-- Sidenav header -->
+      <div class="sidenav__head flex flex-jc-sb flex-ai-c px-1">
+        <a href="/" onclick="closeNav()"
+          ><img
+            src="/images/logo.svg"
+            alt="RC logo"
+            class="logo"
+            loading="lazy"
+        /></a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          ><i class="bi bi-x-square"></i
+        ></a>
+      </div>
+      <!-- Sidenav links -->
+      <div class="mobile-links flex flex-fd-c flex-ai-c my-2">
+        <a href="#showcase" onclick="closeNav()"
+          ><i class="bi bi-images"></i> Proyectos</a
+        >
+        <a href="#services" onclick="closeNav()">
+          <i class="far fa-lightbulb"></i>
+          Servicios
+        </a>
+        <a href="#about" onclick="closeNav()">
+          <i class="bi bi-person-badge"></i>
+          Acerca de
+        </a>
+        <a href="#contact" onclick="closeNav()"
+          ><i class="far fa-paper-plane"></i> Contacto</a
+        >
+      </div>
+      <!-- Sidenav language change section -->
+      <div class="mobile-lang flex flex-jc-sb flex-ai-c flex-fd-c">
+        <p>Selecciona lenguaje</p>
+        <div class="flags">
+          <a href="index.html"
+            ><img
+              src="/images/icons/spain.svg"
+              alt="Bandera de España"
+              loading="lazy"
+          /></a>
+          |
+          <a href="index-en.html"
+            ><img
+              src="/images/icons/united-states.svg"
+              alt="Bandera de Estados Unidos"
+              loading="lazy"
+          /></a>
+        </div>
+      </div>
+      <!-- Sidenav social links -->
+      <div class="mobile-social flex flex-ai-c">
+        <a
+          href="https://twitter.com/rafacalvodev"
+          target="_blank"
+          rel="noopener noreferrer"
+          onclick="closeNav()"
+        >
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a
+          class="mx-1"
+          href="https://github.com/rafacalvo"
+          target="_blank"
+          rel="noopener noreferrer"
+          onclick="closeNav()"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/rafacalvodev/"
+          target="_blank"
+          rel="noopener noreferrer"
+          onclick="closeNav()"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </div>
+    </div>
+    <!-- Hero Section -->
+    <header class="hero container my-1 flex flex-fd-c flex-ai-c flex-jc-sa">
+      <div class="title">
+        <h3>Hola, soy Rafael Calvo.</h3>
+        <h1>
+          Me encargaré de ayudar a tu negocio creando un sitio web que sea
+          responsivo, accesible y asequible.
+        </h1>
+      </div>
+      <a href="#showcase" class="button hero__btn">¡Mira mis trabajos!</a>
+    </header>
+    <main>
+      <!-- Showcase Section -->
+      <section
+        id="showcase"
+        class="showcase container pall-2 my-2 flex flex-ai-c flex-fd-c flex-jc-sb"
+      >
+        <h2>Aqui están mis trabajos más notables:</h2>
+        <div class="showcase__grid mall-1">
+          <!-- 1st Card -->
+          <div class="card">
+            <img
+              src="/images/fundaayc.png"
+              alt="Funda a y c screen shot"
+              class="card-img mb-1"
+              loading="lazy"
+            />
+            <div class="card-content">
+              <h4>Fundación Arquitectura y Ciudad</h4>
+              <p>
+                Sitio actual con el que estoy trabajando. Es una fundación
+                dedicada a crear y mostrar un archivo de las obras
+                arquitectónicas en Venezuela.
+              </p>
+              <div class="card-buttons flex flex-jc-st flex-ai-c">
+                <a
+                  class="button"
+                  href="https://fundaayc.wordpress.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Visitar sitio</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- 2nd Card -->
+          <div class="card">
+            <img
+              src="/images/mafitacrochet.png"
+              alt="Mafitacrochet screen shot"
+              class="card-img mb-1"
+              loading="lazy"
+            />
+            <div class="card-content">
+              <h4>Mafita Crochet</h4>
+              <p>
+                El sitio web de mi mamá. Hecho para mostrar la ropa de bebé que
+                hace a crochet con algodón mercerizado.
+              </p>
+              <div class="card-buttons flex flex-jc-st flex-ai-c">
+                <a
+                  class="button"
+                  href="https://mafitacrochet.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Visitar sitio</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- 3rd card -->
+          <div class="card">
+            <img
+              src="/images/frontendmentor.png"
+              alt="FronEnd Mentor screenshot"
+              class="card-img mb-1"
+              loading="lazy"
+            />
+            <div class="card-content">
+              <h4>Mostrador de Frontend Mentor</h4>
+              <p>
+                Un sitio simple creado para mostrar los desafíos de Frontend
+                Mentor que he estado haciendo.
+              </p>
+              <div class="card-buttons flex flex-jc-st flex-ai-c">
+                <a
+                  class="button"
+                  href="https://frontend-mentor-showcase.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Visitar sitio</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="next-section flex flex-jc-sb flex-fd-c flex-ai-c">
+          <a href="#services" class="services-btn">Mira lo que ofrezco</a>
+          <a href="#services"><i class="bi bi-caret-down-fill"></i></a>
+        </div>
+      </section>
+      <!-- Services Section -->
+      <section
+        id="services"
+        class="services container pall-2 my-2 flex flex-ai-c flex-fd-c flex-jc-sb"
+      >
+        <h2>Aqui está lo que ofrezco:</h2>
+        <div class="services__grid mall-1">
+          <div class="card">
+            <header class="card__header flex flex-jc-st flex-ai-c">
+              <div class="card-icon flex flex-ai-c flex-jc-c">
+                <i class="bi bi-chat-left-text"></i>
+              </div>
+              <h3>Revisión y estrategia.</h3>
+            </header>
+            <p>
+              Después de establecer contacto, haré una revisión de su sitio (si
+              tiene alguno) y la presencia online que tiene su negocio, también
+              discutiremos el enfoque de cómo crear su nuevo sitio web mientras
+              voy creando un prototipo.
+            </p>
+          </div>
+          <div class="card">
+            <header class="card__header flex flex-jc-st flex-ai-c">
+              <div class="card-icon flex flex-ai-c flex-jc-c">
+                <i class="bi bi-pencil-square"></i>
+              </div>
+              <h3>Diseño y Desarrollo.</h3>
+            </header>
+            <p>
+              Diseñaré y desarrollaré el sitio web siguiendo los resultados de
+              nuestra reunión previa. El sitio web se realizará de tal manera
+              que sea atractivo para los visitantes y estos encuentren su
+              destino de la manera más sencilla posible.
+            </p>
+          </div>
+          <div class="card">
+            <header class="card__header flex flex-jc-st flex-ai-c">
+              <div class="card-icon flex flex-ai-c flex-jc-c">
+                <i class="bi bi-headset"></i>
+              </div>
+              <h3>Pruebas y soporte.</h3>
+            </header>
+            <p>
+              Después de confirmar que el sitio está funcionando sin problemas,
+              y previo acuerdo, me aseguraré de que el sitio siga funcionando y
+              proporcionaré suficiente apoyo para ayudarlo a mantenerlo óptimo.
+            </p>
+          </div>
+        </div>
+
+        <div class="next-section flex flex-jc-sb flex-fd-c flex-ai-c">
+          <a href="#about">Sobre mí</a>
+          <a href="#about"><i class="bi bi-caret-down-fill"></i></a>
+        </div>
+      </section>
+      <!-- About Section -->
+      <section
+        id="about"
+        class="about container pall-2 my-2 flex flex-ai-c flex-fd-c flex-jc-sb"
+      >
+        <h2>Un poco sobre mi:</h2>
+        <div class="about__grid flex flex-jc-c flex-ai-c">
+          <div class="about-img">
+            <img
+              class="about-pic"
+              src="/images/about-pic.jpg"
+              alt="Imagen de Rafael"
+              loading="lazy"
+            />
+          </div>
+          <div class="about-text">
+            <p>
+              Mi nombre es Rafael Calvo y soy un Desarrollador Web Front-End que
+              busca ganar experiencia construyendo sitios web que ayuden a
+              diferentes negocios a mejorar su impacto en línea.
+              <br />
+              Con el tiempo, he utilizado muchos recursos en línea disponibles
+              para llegar donde estoy. <br />
+              Entre mis herramientas más utilizadas para trabajar se encuentran
+              las siguientes:
+            </p>
+            <div class="tools">
+              <i class="fab fa-figma"></i>
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3"></i>
+              <i class="fab fa-sass"></i>
+              <i class="fab fa-js"></i>
+              <i class="fab fa-git-alt"></i>
+            </div>
+          </div>
+        </div>
+        <div class="next-section flex flex-jc-sb flex-fd-c flex-ai-c">
+          <a href="#contact">Contáctame</a>
+          <a href="#contact"><i class="bi bi-caret-down-fill"></i></a>
+        </div>
+      </section>
+      <!-- Contact Section -->
+      <section
+        id="contact"
+        class="contact container pall-2 my-2 flex flex-ai-c flex-fd-c flex-jc-sb"
+      >
+        <h2>Aquí es donde puedes contactarme:</h2>
+        <div class="contact__grid flex flex-jc-sb">
+          <!-- Social Links -->
+          <div class="contact-text">
+            <h3>Así es como funciona esto:</h3>
+            <p>
+              Después de establecer contacto, programaremos una reunión en la
+              que discutiremos el enfoque para construir tu sitio y el precio
+              del proyecto. Después de eso, haremos una ruta que contenga el
+              proceso para la construcción de tu sitio donde el resultado será
+              el lanzamiento de dicho sitio y el aumento del tráfico hacia tu
+              negocio.
+            </p>
+            <h3>También me puedes encontrar por acá:</h3>
+            <div class="contact-social flex flex-jc-c mall-1">
+              <a
+                href="https://twitter.com/rafacalvodev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                href="https://github.com/rafacalvo"
+                class="mx-1"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/rafacalvodev/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <!-- Contact Form -->
+          <div class="contact-form">
+            <h3>Contáctame:</h3>
+            <form name="contact" method="POST" data-netlify="true">
+              <div class="form my-2">
+                <label for="name">* Nombre Completo: </label>
+                <input type="text" name="name" required />
+              </div>
+              <div class="form my-2">
+                <label for="email">* Correo electrónico: </label>
+                <input type="email" id="email" name="email" />
+              </div>
+              <div class="form mt-2">
+                <label>* Mensaje: </label>
+                <textarea name="message" required></textarea>
+              </div>
+              <p>
+                <em><small>* Necesario</small></em>
+              </p>
+              <button class="button my-1" type="submit">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- Footer -->
+      <footer class="footer mt-3 pall-2 flex flex-fd-c flex-jc-sb flex-ai-c">
+        <!-- Social Links -->
+        <div class="footer__social flex flex-jc-sa mall-1">
+          <a
+            href="https://twitter.com/rafacalvodev"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            href="https://github.com/rafacalvo"
+            class="mx-1"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/rafacalvodev/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+        <div class="footer__copyright">
+          <h4>© Rafael Calvo 2021 | Todos los derechos reservados.</h4>
+        </div>
+      </footer>
+    </main>
+  </body>
+
+  <!-- Javascript -->
+  <script src="/app/js/app.js" defer></script>
+</html>
