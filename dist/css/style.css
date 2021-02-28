@@ -796,6 +796,11 @@ button:hover,
   gap: 0.5rem;
 }
 
+.about__grid .hire {
+  color: #fc3535;
+  font-weight: 600;
+}
+
 .contact {
   height: 100vh;
 }
