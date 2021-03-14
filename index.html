@@ -15,16 +15,16 @@
     <!-- Google tags -->
     <!-- Google Tag Manager -->
     <script>
-      ;(function (w, d, s, l, i) {
-        w[l] = w[l] || []
-        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' })
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
         var f = d.getElementsByTagName(s)[0],
           j = d.createElement(s),
-          dl = l != 'dataLayer' ? '&l=' + l : ''
-        j.async = true
-        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
-        f.parentNode.insertBefore(j, f)
-      })(window, document, 'script', 'dataLayer', 'GTM-T34TZ3V')
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-T34TZ3V');
     </script>
     <!-- End Google Tag Manager -->
     <meta
@@ -197,14 +197,14 @@
       <div class="mobile-lang flex flex-jc-sb flex-ai-c flex-fd-c">
         <p>Selecciona lenguaje</p>
         <div class="flags">
-          <a href="index.html"
+          <a href="index.html" onclick="closeNav()"
             ><img
               src="/images/icons/spain.svg"
               alt="Bandera de España"
               loading="lazy"
           /></a>
           |
-          <a href="index-en.html"
+          <a href="index-en.html" onclick="closeNav()"
             ><img
               src="/images/icons/united-states.svg"
               alt="Bandera de Estados Unidos"
@@ -236,6 +236,12 @@
           rel="noopener noreferrer"
           onclick="closeNav()"
           ><i class="fab fa-instagram"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/rafacalvodev"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fab fa-linkedin"></i
         ></a>
       </div>
     </div>
@@ -327,6 +333,37 @@
                 <a
                   class="button"
                   href="https://frontend-mentor-showcase.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Visitar sitio</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- 4th card -->
+          <div class="card">
+            <img
+              src="/images/pomodoro.png"
+              alt="Imagen de Pomodoro App"
+              class="card-img mb-1"
+              loading="lazy"
+            />
+            <div class="card-content">
+              <h4>Pomodoro App</h4>
+              <p>
+                Una simple aplicación que usa la
+                <a
+                  href="https://es.wikipedia.org/wiki/T%C3%A9cnica_Pomodoro"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Técnica Pomodoro</a
+                >
+                para ayudar a la productividad.
+              </p>
+              <div class="card-buttons flex flex-jc-st flex-ai-c">
+                <a
+                  class="button"
+                  href="https://a-pomodoro-app.netlify.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   >Visitar sitio</a
@@ -512,6 +549,7 @@
             href="https://twitter.com/rafacalvodev"
             target="_blank"
             rel="noopener noreferrer"
+            onclick="closeNav()"
           >
             <i class="fab fa-twitter"></i>
           </a>
@@ -520,13 +558,22 @@
             class="mx-1"
             target="_blank"
             rel="noopener noreferrer"
+            onclick="closeNav()"
             ><i class="fab fa-github"></i
           ></a>
           <a
             href="https://www.instagram.com/rafacalvodev/"
             target="_blank"
             rel="noopener noreferrer"
+            onclick="closeNav()"
             ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/rafacalvodev"
+            target="_blank"
+            rel="noopener noreferrer"
+            onclick="closeNav()"
+            ><i class="fab fa-linkedin"></i
           ></a>
         </div>
         <div class="footer__copyright">

@@ -80,7 +80,7 @@
 
   &__mobile {
     border-radius: 0 0 1rem 1rem;
-    background-color: $darkBgT07;
+    background-color: $darkBgT08;
 
     img {
       width: 3rem;
@@ -93,7 +93,7 @@
 }
 
 .sidenav {
-  background-color: $darkBgT1;
+  background-color: $veryDarkBlue;
   height: 100%;
   width: 0;
   position: fixed;
@@ -159,6 +159,10 @@
   .mobile-social {
     a:nth-child(2) {
       margin: 0 1.5rem;
+    }
+
+    a:nth-child(3) {
+      margin: 0 1.5rem 0 0;
     }
   }
 }
