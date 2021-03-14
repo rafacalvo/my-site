@@ -1,5 +1,5 @@
 .nav {
-  background-color: $darkBgT07;
+  background-color: $veryDarkBlue;
 
   @include breakpoint-down(medium) {
     background: none;
@@ -80,7 +80,7 @@
 
   &__mobile {
     border-radius: 0 0 1rem 1rem;
-    background-color: $darkBgT08;
+    background-color: $veryDarkBlue;
 
     img {
       width: 3rem;
